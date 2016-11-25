@@ -1,0 +1,9 @@
+Base path: C:/Program Files (x86)/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-32bit-1-16464
+While reading command: Could not open pipe: 2 second wait timed out.
+The semaphore timeout period has expired.
+
+
+Quitting shader compiler process
+
+Crashed!
