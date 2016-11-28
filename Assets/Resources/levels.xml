@@ -1,0 +1,34 @@
+<levels>
+
+  <level>
+    <levelname>1</levelname>
+    <setup>8,12,13,14,18</setup>
+  </level>
+
+  <level>
+    <levelname>2</levelname>
+    <setup>1,7,13,19,25</setup>
+  </level>
+
+  <level>
+    <levelname>3</levelname>
+    <setup>1,5,7,9,17,19,21,25</setup>
+  </level>
+
+  <level>
+    <levelname>4</levelname>
+    <setup>2,4,6,10,16,20,22,24</setup>
+  </level>
+
+  <level>
+    <levelname>5</levelname>
+    <setup>3,11,13,15,23</setup>
+  </level>
+
+  <level>
+    <levelname>6</levelname>
+    <setup>2,4,6,7,9,10,16,17,19,20,22,24</setup>
+  </level>
+
+</levels>
+
