@@ -18,12 +18,12 @@ public class Engine : MonoBehaviour {
         int progint = 0;
         for(int i=0; i < numberOfLevels+1; i++)
         {
-            if(PlayerPrefs.HasKey(i.ToString()))
+            switch(PlayerPrefs.HasKey(i.ToString()))
             {
+                case true:
                 progint++;
-            }
-            else
-            {
+                    break;
+                default:
                 progint++;
                 break;
             }
@@ -40,13 +40,14 @@ public class Engine : MonoBehaviour {
     {
         if(PlayerPrefs.HasKey(currentLevel.ToString()))
         {
-            if(getScore(currentLevel.ToString()) > numberOfMoves)
+            switch(getScore(currentLevel.ToString()) > numberOfMoves)
             {
+                case true:
                 PlayerPrefs.SetInt(currentLevel.ToString(), numberOfMoves);
-            }
-            else
-            {
+                    break;
+                default:
                 PlayerPrefs.SetInt(currentLevel.ToString(), numberOfMoves);
+                    break;
             }
         }
     }

@@ -6,6 +6,7 @@ public class levelEditor : MonoBehaviour {
 
     public string levNumber;
     string runtimeLevels;
+    private int clear = 1;
 
     public void setLevelName(string nr)
     {
@@ -14,11 +15,12 @@ public class levelEditor : MonoBehaviour {
 
     public void ClearButton()
     {
-        for(int i = 1; i<26; i++)
+        while(clear<26)
         {
-            if(GameObject.Find(i.ToString()).GetComponent<lightSwitch>().isOn)
+            clear++;
+            if(GameObject.Find(clear.ToString()).GetComponent<lightSwitch>().isOn)
             {
-                GameObject.Find(i.ToString()).GetComponent<lightSwitch>().change();
+                GameObject.Find(clear.ToString()).GetComponent<lightSwitch>().change();
             }
         }
     }
@@ -27,12 +29,13 @@ public class levelEditor : MonoBehaviour {
     {
         string levelstring = "";
 
-        for(int i = 1; i<26; i++)
+        while(clear<26)
         {
-            if(GameObject.Find(i.ToString()).GetComponent<lightSwitch>().isOn)
+            clear++;
+            if(GameObject.Find(clear.ToString()).GetComponent<lightSwitch>().isOn)
             {
-                if (levelstring.Length == 0) levelstring = i.ToString();
-                else levelstring += "," + i;
+                if (levelstring.Length == 0) levelstring = clear.ToString();
+                else levelstring += "," + clear;
             }
         }
         runtimeLevels +=
