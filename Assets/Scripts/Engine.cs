@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Engine : MonoBehaviour {
 
@@ -64,4 +65,5 @@ public class Engine : MonoBehaviour {
         numberOfMoves = 0;
         this.gameObject.GetComponent<levelHandler>().loadLevel(currentLevel);
     }
+
 }
