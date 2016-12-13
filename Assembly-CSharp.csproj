@@ -46,10 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Actions.cs" />
      <Compile Include="Assets\Scripts\Engine.cs" />
+     <Compile Include="Assets\Scripts\Explosions.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\levelEditor.cs" />
      <Compile Include="Assets\Scripts\levelHandler.cs" />
+     <Compile Include="Assets\Scripts\levelName.cs" />
      <Compile Include="Assets\Scripts\lightSwitch.cs" />
      <Compile Include="Assets\Scripts\turnManager.cs" />
      <None Include="Assets\Resources\editor.txt" />

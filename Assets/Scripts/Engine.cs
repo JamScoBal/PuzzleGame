@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Engine : MonoBehaviour {
 
     int numberOfLevels;
-    public int currentLevel;
+    public static int currentLevel;
     public int numberOfMoves;
 
     public void init(int nr)
