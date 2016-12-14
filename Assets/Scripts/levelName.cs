@@ -10,4 +10,9 @@ public class levelName : MonoBehaviour {
 	void Update () {
         level.text = ("Level " + Engine.currentLevel);
 	}
+
+    static void Highscore()
+    {
+        Debug.Log("Your level is" + Engine.currentLevel);
+    }
 }
