@@ -1,20 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 using System;
 
 public class Actions : MonoBehaviour {
 
-    
-    public static Action<Text> test;
 
-	// Use this for initialization
-	static void Start () {
-        
-	}
+    // Use this for initialization
+    void Start () {
+        Action sayYay = () => { Debug.Log("Yay!"); };
+        sayYay();
+
+        Action sayYippy = () => { Debug.Log("Yippy!"); };
+        sayYippy();
+
+        Action sayWoohoo = () => { Debug.Log("Woohoo!"); };
+        sayWoohoo();
+
+        Action sayYouCanDoIt = () => { Debug.Log("You can do it!"); };
+        sayYouCanDoIt();
+    }
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
